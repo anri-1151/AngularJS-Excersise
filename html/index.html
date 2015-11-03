@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<!-- style sheet -->
+	
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+
+<md-toolbar class="md-menu-toolbar" hide-sm hide-md flex>
+<div layout="row" layout-align="center center" >
+			<md-menu-bar>
+				<md-menu>
+					<md-button class="md-raised md-primary" ng-click="$mdOpenMenu()">Users</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<a href="#viewUsers"><md-button>Get All Users</md-button></a>
+						</md-menu-item>
+                        <md-menu-divider</md-menu-divider>
+						<md-menu-item>
+							<a href="#editUser"><md-button >Edit Selected User</md-button></a>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+				<a href="#addUser"><md-button class="md-raised md-primary">Add</md-button></a>
+				<a href="#info"><md-button class="md-raised md-primary">My Info</md-button></a>
+            </md-menu-bar>
+</div>
+</md-toolbar>
+<md-toolbar class="md-menu-toolbar" hide-gt-md flex>
+<div layout="column" layout-align="center center" >
+			
+				<md-menu>
+					<md-button class="md-raised md-primary" ng-click="$mdOpenMenu()">Users</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<a href="#viewUsers"><md-button>Get All Users</md-button></a>
+						</md-menu-item>
+                        <md-menu-divider</md-menu-divider>
+						<md-menu-item>
+							<a href="#editUser"><md-button >Edit Selected User</md-button></a>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+				<a href="#addUser"><md-button class="md-raised md-primary">Add</md-button></a>
+				<a href="#info"><md-button class="md-raised md-primary">My Info</md-button></a>
+            
+</div>
+</md-toolbar>
+<div ng-view></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+	<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
